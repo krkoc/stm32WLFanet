@@ -2,18 +2,18 @@
 ../Core/Fanet/TimerObject.cpp:10:1:TimerObject::TimerObject(long unsigned int, CallBackType)	24	static
 ../Core/Fanet/TimerObject.cpp:14:1:TimerObject::TimerObject(long unsigned int, CallBackType, bool)	24	static
 ../Core/Fanet/TimerObject.cpp:18:6:void TimerObject::Create(long unsigned int, CallBackType, bool)	24	static
-../Core/Fanet/TimerObject.cpp:26:6:void TimerObject::setInterval(long unsigned int)	16	static
-../Core/Fanet/TimerObject.cpp:30:6:void TimerObject::setEnabled(bool)	16	static
-../Core/Fanet/TimerObject.cpp:34:6:void TimerObject::setSingleShot(bool)	16	static
-../Core/Fanet/TimerObject.cpp:38:6:void TimerObject::setOnTimer(CallBackType)	16	static
-../Core/Fanet/TimerObject.cpp:42:6:void TimerObject::Start()	16	static
-../Core/Fanet/TimerObject.cpp:47:6:void TimerObject::Resume()	16	static
-../Core/Fanet/TimerObject.cpp:52:6:void TimerObject::Stop()	16	static
-../Core/Fanet/TimerObject.cpp:57:6:void TimerObject::Pause()	16	static
-../Core/Fanet/TimerObject.cpp:63:6:void TimerObject::Update()	16	static
-../Core/Fanet/TimerObject.cpp:68:6:bool TimerObject::Tick()	24	static
-../Core/Fanet/TimerObject.cpp:83:19:long unsigned int TimerObject::getInterval()	16	static
-../Core/Fanet/TimerObject.cpp:87:19:long unsigned int TimerObject::getCurrentTime()	16	static
-../Core/Fanet/TimerObject.cpp:90:14:void (* TimerObject::getOnTimerCallback())()	16	static
-../Core/Fanet/TimerObject.cpp:94:6:bool TimerObject::isEnabled()	16	static
-../Core/Fanet/TimerObject.cpp:98:6:bool TimerObject::isSingleShot()	16	static
+../Core/Fanet/TimerObject.cpp:29:6:void TimerObject::setInterval(long unsigned int)	16	static
+../Core/Fanet/TimerObject.cpp:33:6:void TimerObject::setEnabled(bool)	16	static
+../Core/Fanet/TimerObject.cpp:37:6:void TimerObject::setSingleShot(bool)	16	static
+../Core/Fanet/TimerObject.cpp:41:6:void TimerObject::setOnTimer(CallBackType)	16	static
+../Core/Fanet/TimerObject.cpp:45:6:void TimerObject::Start()	16	static
+../Core/Fanet/TimerObject.cpp:50:6:void TimerObject::Resume()	16	static
+../Core/Fanet/TimerObject.cpp:55:6:void TimerObject::Stop()	16	static
+../Core/Fanet/TimerObject.cpp:60:6:void TimerObject::Pause()	16	static
+../Core/Fanet/TimerObject.cpp:66:6:void TimerObject::Update()	16	static
+../Core/Fanet/TimerObject.cpp:71:6:bool TimerObject::Tick()	24	static
+../Core/Fanet/TimerObject.cpp:86:19:long unsigned int TimerObject::getInterval()	16	static
+../Core/Fanet/TimerObject.cpp:90:19:long unsigned int TimerObject::getCurrentTime()	16	static
+../Core/Fanet/TimerObject.cpp:93:14:void (* TimerObject::getOnTimerCallback())()	16	static
+../Core/Fanet/TimerObject.cpp:97:6:bool TimerObject::isEnabled()	16	static
+../Core/Fanet/TimerObject.cpp:101:6:bool TimerObject::isSingleShot()	16	static

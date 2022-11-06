@@ -45,3 +45,12 @@ int sx1272_sendFrame(uint8_t *data, int length, uint8_t cr) //dummy placeholder
 return 0;
 }
 
+bool sx1272_setArmed(bool rxmode)
+{
+return true;
+}
+
+bool sx1272_setRegion(sx_region_t region)
+{
+
+}

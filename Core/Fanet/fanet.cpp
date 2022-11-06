@@ -49,6 +49,29 @@ void fanet_init(serial_t *serial)
 	serial_int.print_line(FN_REPLYM_INITIALIZED);
 }
 
+
+void fanet_init_fake(void)
+{
+	//serial_int.begin(serial);
+
+	/* FANET */
+	//app.begin(serial_int);
+	while(fmac.begin(app) == false)
+	{
+	//	serial_int.print_line(FN_REPLYE_RADIO_FAILED);
+		//HAL_Delay(500);
+		//NVIC_SystemReset();
+	}
+
+	/* FLARM */
+#ifdef FLARM
+	if(casw.begin(fmac.myAddr) == false)
+		serial_int.print_line(FA_REPLYE_FLARMADDRISSUE);
+#endif
+
+	//serial_int.print_line(FN_REPLYM_INITIALIZED);
+}
+
 void fanet_sx_int(void)
 {
 	fanet_sxirq++;
@@ -71,7 +94,7 @@ void fanet_loop(void)
 	if(fanet_sxirq != fanet_sxexec)
 	{
 		fanet_sxexec++;
-		//sx1272_irq(); //todo: insert radio interrupt
+		//sx1272_irq(); //todo: insert radio interrupt or manage it othewise. Commented to make it compile
 	}
 	fmac.handle();
 

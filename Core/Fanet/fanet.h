@@ -14,9 +14,10 @@ extern "C" {
 
 //#define FLARM
 
-//#include "wire/serial.h" //todo: serial must be included if it will be used
+#include "serial.h"
 
-//void fanet_init(serial_t *serial); todo: commented because wire/serial.h lib was omitted
+void fanet_init(serial_t *serial);
+void fanet_init_fake(void);
 void fanet_loop(void);
 
 void fanet_sx_int(void);

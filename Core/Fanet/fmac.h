@@ -37,7 +37,8 @@
  * ONLY change if you know what you are doing. Can destroy the hole nearby network!
  */
 
-#define MAC_SLOT_MS				20
+//#define MAC_SLOT_MS				20
+#define MAC_SLOT_MS				2000
 
 #define MAC_TX_MINPREAMBLEHEADERTIME_MS		15
 #define MAC_TX_TIMEPERBYTE_MS			2
@@ -84,8 +85,8 @@
 #include "stm32wlxx.h"
 #include "stm32wlxx_hal.h"
 
-#include "LinkedList.h" //todo: resolve
-#include "TimerObject.h" //todo: resolve
+#include "LinkedList.h"
+#include "TimerObject.h"
 
 #include "frame.h"
 

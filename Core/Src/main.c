@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "app_subghz_phy.h"
+#include "../Fanet/fanet.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,7 +94,7 @@ int main(void)
   MX_SubGHz_Phy_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-
+  fanet_init_fake();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -101,7 +102,8 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    MX_SubGHz_Phy_Process();
+	fanet_loop();
+	//  MX_SubGHz_Phy_Process();
 
     /* USER CODE BEGIN 3 */
   }

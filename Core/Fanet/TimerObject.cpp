@@ -18,7 +18,10 @@ TimerObject::TimerObject(unsigned long int ms, CallBackType callback, bool isSin
 void TimerObject::Create(unsigned long int ms, CallBackType callback, bool isSingle){
 	setInterval(ms);
 	setEnabled(false);
+
+
 	setSingleShot(isSingle);
+
 	setOnTimer(callback);
 	LastTime = 0;
 }

@@ -10,15 +10,14 @@
 
 #include "stm32wlxx.h"
 #include "stm32wlxx_hal.h"
-//#include "spi.h" //todo: removed because it was used for external radio chip
 
 #include "random.h"
-#include "sx1272.h" //todo: removed c file because it was used for external radio chip. new radiio lib will have to take its place
+#include "sx1272.h"
 #include "fmac.h"
 
 
 /* get next frame which can be sent out */
-//todo: this is potentially dangerous, as frm may be deleted in another place.
+//previoustodo: this is potentially dangerous, as frm may be deleted in another place.
 Frame* MacFifo::get_nexttx()
 {
 	int next;
@@ -197,14 +196,14 @@ bool FanetMac::begin(Fapp &app)
 	/* todo: reconfigure for ner radio
 	if (sx1272_init(HAL_SPI_get()) == false)
 		return false; */
-	sx1272_setBandwidth(BW_250);
+	/*sx1272_setBandwidth(BW_250);
 	sx1272_setSpreadingFactor(SF_7);
 	sx1272_setCodingRate(CR_5);
 	sx1272_setExplicitHeader(true);
 	sx1272_setSyncWord(MAC_SYNCWORD);
 	sx1272_setPayloadCrc(true);
 	sx1272_setLnaGain(LNAGAIN_G1_MAX, true);
-	sx1272_setIrqReceiver(frameRxWrapper);
+	sx1272_setIrqReceiver(frameRxWrapper);*/
 
 	/* region specific. default is EU */
 	sx_region_t region;
@@ -213,7 +212,7 @@ bool FanetMac::begin(Fapp &app)
 	sx1272_setRegion(region);
 
 	/* enter sleep mode */
-	sx1272_setArmed(false);
+	//sx1272_setArmed(false);
 
 	/* address */
 	_myAddr = readAddr();

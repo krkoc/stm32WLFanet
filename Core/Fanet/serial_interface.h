@@ -196,7 +196,7 @@ public:
 
 	uint32_t get_lastactivity(void) { return last_activity; };
 	bool any_actitity(void) { return (last_activity!=0); };
-    //todo: make it work
+    //previoustodo: make it work
 	//void flarm_expired(void){ print_line(FA_REPLYE_EXPIRED); };
 
 	void print_line(const char *type, int key, const char *msg);

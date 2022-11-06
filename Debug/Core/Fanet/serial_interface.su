@@ -5,9 +5,9 @@ d:\st\stm32cubeide_1.9.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externalt
 ../Core/Fanet/macaddr.h:26:14:bool MacAddr::operator==(const MacAddr&) const	16	static
 ../Core/Fanet/frame.h:77:2:Frame::Frame(MacAddr)	16	static
 ../Core/Fanet/frame.h:80:2:Frame::~Frame()	16	static
-../Core/Fanet/fmac.h:137:6:int MacFifo::size()	16	static
-../Core/Fanet/fmac.h:178:7:bool FanetMac::txQueueHasFreeSlots()	16	static
-../Core/Fanet/fmac.h:179:6:int FanetMac::transmit(Frame*)	16	static
+../Core/Fanet/fmac.h:138:6:int MacFifo::size()	16	static
+../Core/Fanet/fmac.h:179:7:bool FanetMac::txQueueHasFreeSlots()	16	static
+../Core/Fanet/fmac.h:180:6:int FanetMac::transmit(Frame*)	16	static
 ../Core/Fanet/serial_interface.h:187:2:Serial_Interface::Serial_Interface()	16	static
 ../Core/Fanet/serial_interface.cpp:39:6:void Serial_Interface::fanet_cmd_state(char*)	128	static
 ../Core/Fanet/serial_interface.cpp:153:6:void Serial_Interface::fanet_cmd_addr(char*)	120	static
