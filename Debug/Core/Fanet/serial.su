@@ -1,0 +1,4 @@
+../Core/Fanet/serial.c:27:6:serialRxCallback	16	static
+../Core/Fanet/serial.c:65:11:serial_init	16	static
+../Core/Fanet/serial.c:83:6:serial_poll	32	static
+../Core/Fanet/serial.c:107:6:serial_print	24	static

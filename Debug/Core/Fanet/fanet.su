@@ -1,0 +1,7 @@
+../Drivers/CMSIS/Include/core_cm4.h:1933:34:void __NVIC_SystemReset()	4	static,ignoring_inline_asm
+../Core/Fanet/fmac.h:175:7:void FanetMac::handle()	16	static
+../Core/Fanet/app.h:105:7:void App::begin(Serial_Interface&)	16	static
+../Core/Fanet/fanet.cpp:30:6:void fanet_init(serial_t*)	16	static
+../Core/Fanet/fanet.cpp:52:6:void fanet_sx_int()	4	static
+../Core/Fanet/fanet.cpp:57:6:void fanet_pps_int()	4	static
+../Core/Fanet/fanet.cpp:65:6:void fanet_loop()	8	static

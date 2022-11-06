@@ -1,0 +1,2 @@
+../Core/Fanet/circular_buffer.c:12:5:circ_buf_push	24	static
+../Core/Fanet/circular_buffer.c:27:5:circ_buf_pop	24	static

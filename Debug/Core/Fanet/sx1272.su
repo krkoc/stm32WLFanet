@@ -1,0 +1,3 @@
+../Core/Fanet/sx1272.c:32:7:sx1272_get_airlimit	4	static
+../Core/Fanet/sx1272.c:38:6:sx1272_isArmed	4	static
+../Core/Fanet/sx1272.c:43:5:sx1272_sendFrame	24	static
